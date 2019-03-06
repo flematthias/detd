@@ -14,11 +14,13 @@
             <p><?php the_content(); ?></p>
             <p>Publié par: <?php the_author(); ?></p>
         </div>
-    </article>
+
     <hr>
     <?php comments_template(); ?>
-</section>
+    </article>
+
 
 <?php previous_post_link(); ?>
 <?php next_post_link(); ?>
+</section>
 <?php get_footer(); ?>

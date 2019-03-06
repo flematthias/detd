@@ -11,6 +11,7 @@
 
 #banner
 {
+  color: @bodycolor;
   text-align: center;
   line-height: 1vh;
   width: 100vw;
@@ -163,10 +164,16 @@ a:hover{
 //Single
 .single_article
 {
-  background-color: @bodycolor ;
-  margin: 2vh 1vw 2vh 1vw;
-  border-radius: 4px;
-  text-align: center;
+background-color: @fondsite;
+  padding: 2vh 1vw 2vh 1vw;
+
+  article {
+    background-color: white ;
+    border: solid 1px @grisfonce;
+    border-radius: 4px;
+    text-align: center;
+  }
+
 
   header p
   {
