@@ -15,9 +15,13 @@ footer {
   min-height: 17vh;
   flex-direction: column;
 }
+footer ul {
+  display: flex;
+  min-width: 25vw;
+  justify-content: space-evenly;
+}
 footer li {
   list-style: none;
-  display: inline-flex;
 }
 footer a {
   color: #8a8a8a;
