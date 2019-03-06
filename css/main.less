@@ -113,6 +113,8 @@ a:hover{
 
     img{
         border-radius: 4px;
+        position: relative;
+        z-index: 1;
     }
     h3{
         color: @grisfonce;
@@ -144,13 +146,19 @@ a:hover{
 
 }
 
-.img-comments{
-background-repeat: none;
+.classhome .img-comments {
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+position: relative;
+z-index: 999;
+margin-top: -1.5em;
 }
 
 .number-comments{
 display: flex;
 justify-content: center;
+color: white;
 
 }
 
@@ -208,7 +216,7 @@ background-color: @fondsite;
   {
     padding: 2vh 2vw 2vh 2vw;
     border-radius: 4px;
-    height: 80vh;
+    width: 80%;
   }
 
 
@@ -216,6 +224,21 @@ background-color: @fondsite;
   {
     padding: 2vh 10vw 2vh 10vw;
     text-align: justify;
+  }
+
+  .comment-form
+  {
+    textarea, input
+    {
+      border: 5px solid @fondsite;
+    }
+
+    .submit
+    {
+      color: white;
+      background-color: black;
+      border: none;
+    }
   }
 }
 //Single
