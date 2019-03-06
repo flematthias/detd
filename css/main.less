@@ -60,11 +60,9 @@ a:hover{
 .links-menu {
   width: 40%;
   display: flex;
-  flex-direction: column;
   list-style-type: none;
   justify-content: space-between;
   @media @tablet {
-flex-direction: row;
 }
 
 }
@@ -76,6 +74,10 @@ flex-direction: row;
   display: none;
   padding: 10px;
   background-color: @grisfonce;
+  @media @tablet {
+
+  }
+  @media
 }
 
 .menu-item-has-children:hover{
@@ -157,6 +159,36 @@ flex-direction: row;
   }
 
 // Home
+
+//Single
+.single_article
+{
+  background-color: @bodycolor ;
+  margin: 2vh 1vw 2vh 1vw;
+  border-radius: 4px;
+  text-align: center;
+
+  header p
+  {
+    text-align: center;
+  }
+
+  img
+  {
+    padding: 2vh 2vw 2vh 2vw;
+    border-radius: 4px;
+    height: 80vh;
+  }
+
+
+  p
+  {
+    padding: 2vh 10vw 2vh 10vw;
+    text-align: justify;
+  }
+}
+//Single
+
 //Footer
 footer
 {
