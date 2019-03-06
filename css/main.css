@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
+.cat-menu {
+  display: flex;
+  flex-direction: column;
+}
 .my-masonry-image-list {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
