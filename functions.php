@@ -8,13 +8,13 @@ function detd_styles()
    // REGISTER
    wp_register_style('MD','https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
    wp_register_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css');
-    // wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
    wp_register_style('flexslider', get_template_directory_uri() . '/css/flexslider.css');
     wp_register_style('main', get_template_directory_uri() . '/css/main.css');
     
     // ENQUEUE
    wp_enqueue_style('fontawesome');
-    // wp_enqueue_style('bootstrap');
+    wp_enqueue_style('bootstrap');
    wp_enqueue_style('flexslider');
    wp_enqueue_style('MD');
     wp_enqueue_style('main');
