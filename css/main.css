@@ -5,3 +5,11 @@
   /* Firefox */
   column-count: 3;
 }
+footer {
+  background-color: #292e32;
+  color: #8a8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+}
