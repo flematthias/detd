@@ -4,21 +4,48 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
 //import
 
-h1
+#banner
 {
-  font-family: 'Varela', sans-serif;
-  -webkit-transition: 1s;
-  transition: 1s;
   text-align: center;
+  line-height: 1vh;
+  width: 100vw;
+  background-color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 
-}
-
+  h1
+  {
+    color: @presquenoir;
+    font-family: 'Varela', sans-serif;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
 h1:hover
-{
-  letter-spacing: 1vh;
+ {
+   letter-spacing: 1vh;
+ }
+
+  i:hover
+  {
+    color: black;
+  }
 }
+
+.home {
+  background-color: @fondsite;
+  color: @bodycolor;
+}
+
 
 //Header
+
+a {
+  color: @baselinecolor;
+}
+a:hover{
+  text-decoration: none;
+  color: @baselinecolor;
+}
 .cat-menu {
   display: flex;
   flex-direction: column;
@@ -36,7 +63,7 @@ h1:hover
   list-style-type: none;
   //margin-left: -40px;
   display: none;
-  padding: 5px;
+  padding: 10px;
   background-color: @grisfonce;
 }
 
