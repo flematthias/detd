@@ -109,6 +109,8 @@ a:hover{
 
     img{
         border-radius: 4px;
+        position: relative;
+        z-index: 1;
     }
     h3{
         color: @grisfonce;
@@ -140,13 +142,19 @@ a:hover{
 
 }
 
-.img-comments{
-background-repeat: none;
+.classhome .img-comments {
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+position: relative;
+z-index: 999;
+margin-top: -1.5em;
 }
 
 .number-comments{
 display: flex;
 justify-content: center;
+color: white;
 
 }
 

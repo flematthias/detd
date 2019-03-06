@@ -90,6 +90,8 @@ a:hover {
 }
 .classhome img {
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 .classhome h3 {
   color: #292e32;
@@ -116,12 +118,18 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.img-comments {
-  background-repeat: none;
+.classhome .img-comments {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  z-index: 999;
+  margin-top: -1.5em;
 }
 .number-comments {
   display: flex;
   justify-content: center;
+  color: white;
 }
 .my-masonry-image-list {
   -webkit-column-count: 3;
