@@ -6,12 +6,12 @@
     <div>
         <h1>D&D</h1>
         <p>Design et Développement Web</p>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-dribbble"></i>
-        <i class="fab fa-github-alt"></i>
-        <i class="fab fa-codepen"></i>
-        <i class="fab fa-linkedin"></i>
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-dribbble"></i>
+        <i class="fa fa-github-alt"></i>
+        <i class="fa fa-codepen"></i>
+        <i class="fa fa-linkedin"></i>
     </div>
 
     <nav>

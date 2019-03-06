@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
+h1 {
+  font-family: 'Varela', sans-serif;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+h1:hover {
+  letter-spacing: 1vh;
+}
 .cat-menu {
   display: flex;
   flex-direction: column;
