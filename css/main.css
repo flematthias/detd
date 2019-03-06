@@ -181,11 +181,20 @@ a:hover {
 .single_article img {
   padding: 2vh 2vw 2vh 2vw;
   border-radius: 4px;
-  height: 80vh;
+  width: 80%;
 }
 .single_article p {
   padding: 2vh 10vw 2vh 10vw;
   text-align: justify;
+}
+.single_article .comment-form textarea,
+.single_article .comment-form input {
+  border: 5px solid #f5f5f5;
+}
+.single_article .comment-form .submit {
+  color: white;
+  background-color: black;
+  border: none;
 }
 footer {
   background-color: #292e32;
