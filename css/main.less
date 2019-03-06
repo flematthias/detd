@@ -22,6 +22,28 @@ h1:hover
   display: flex;
   flex-direction: column;
 }
+.links-menu {
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+.sub-menu{
+  position: absolute;
+  list-style-type: none;
+  margin-left: -40px;
+  display: none;
+}
+
+.menu-item-has-children:hover{
+  .sub-menu{
+    display: block;
+  }
+}
+.menu-item-has-childre::after{
+  content: '+';
+}
 //Header
 // Home
 
