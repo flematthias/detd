@@ -2,8 +2,13 @@
 #banner {
   text-align: center;
   line-height: 1vh;
+  width: 100vw;
+  background-color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 #banner h1 {
+  color: black;
   font-family: 'Varela', sans-serif;
   -webkit-transition: 1s;
   transition: 1s;

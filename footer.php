@@ -16,7 +16,7 @@
 
     <nav>
     <?php wp_nav_menu(array(
-        'theme_location' => 'main',
+        'theme_location' => 'footer',
         'container' => false
     )); ?>
     </nav>
