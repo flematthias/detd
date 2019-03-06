@@ -177,6 +177,14 @@ a:hover {
   background-color: #f5f5f5;
   padding: 2vh 1vw 2vh 1vw;
 }
+.single_article .img-comments {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  z-index: 999;
+  margin-top: -3em;
+}
 .single_article article {
   background-color: white ;
   border: solid 1px #292e32;
@@ -198,11 +206,13 @@ a:hover {
 .single_article .comment-form textarea,
 .single_article .comment-form input {
   border: 5px solid #f5f5f5;
+  width: 100%;
 }
 .single_article .comment-form .submit {
   color: white;
   background-color: black;
   border: none;
+  width: 15%;
 }
 footer {
   background-color: #292e32;

@@ -195,6 +195,14 @@ color: white;
 background-color: @fondsite;
   padding: 2vh 1vw 2vh 1vw;
 
+  .img-comments {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    z-index: 999;
+    margin-top: -3em;
+  }
   article {
     background-color: white ;
     border: solid 1px @grisfonce;
@@ -224,9 +232,11 @@ background-color: @fondsite;
 
   .comment-form
   {
+
     textarea, input
     {
       border: 5px solid @fondsite;
+      width: 100%;
     }
 
     .submit
@@ -234,6 +244,7 @@ background-color: @fondsite;
       color: white;
       background-color: black;
       border: none;
+      width: 15%;
     }
   }
 }
