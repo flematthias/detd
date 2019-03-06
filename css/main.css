@@ -42,14 +42,8 @@ a:hover {
 .links-menu {
   width: 40%;
   display: flex;
-  flex-direction: column;
   list-style-type: none;
   justify-content: space-between;
-}
-@media screen and (min-width: 48em) {
-  .links-menu {
-    flex-direction: row;
-  }
 }
 .sub-menu {
   z-index: 99999;
