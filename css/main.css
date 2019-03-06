@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+.centerhome {
+  display: flex;
+  flex-direction: column;
+}
 .my-masonry-image-list {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
