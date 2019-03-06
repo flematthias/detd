@@ -50,16 +50,36 @@ h1:hover
 }
 //Header
 // Home
-.centerhome{
-
+.classhome {
+    border: 4px;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+display: -ms-flexbox;
+    img{
+        border-radius: 4px 4px 0 0;
+    }
+    h3{
+        color: @grisfonce;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: larger;
+    }
+    a{
+        color: @presquenoir;
+    }
+    a:hover{
+        color: @baselinecolor;
+        text-decoration: none;
+    }
+    div{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
+    }
+
 }
-.masonry-columns(@columns) {
-    -webkit-column-count: @columns; /* Chrome, Safari, Opera */
-  -moz-column-count: @columns; /* Firefox */
-  column-count: @columns;
-}
+
 .my-masonry-image-list {
     .masonry-columns(3);
   }
