@@ -65,4 +65,12 @@ function register_my_menus(){
   }
   add_action('init', 'bongo_wp_pagination');
 
+function dd_scripts()
+{
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', 'style' );
+    wp_enqueue_style( 'dd_style', get_stylesheet_directory_uri() . '/css/main.css' );
+}
+
+add_action( 'wp_enqueue_scripts', 'dd_scripts' );
 
