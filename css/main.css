@@ -59,6 +59,34 @@ a:hover {
 .menu-item-has-childre::after {
   content: '+';
 }
+.classhome {
+  border: 4px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  display: -ms-flexbox;
+}
+.classhome img {
+  border-radius: 4px 4px 0 0;
+}
+.classhome h3 {
+  color: #292e32;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: larger;
+}
+.classhome a {
+  color: #141414;
+}
+.classhome a:hover {
+  color: #b8b4b4;
+  text-decoration: none;
+}
+.classhome div {
+  display: flex;
+  flex-direction: column;
+}
 .my-masonry-image-list {
   -webkit-column-count: 3;
   /* Chrome, Safari, Opera */
