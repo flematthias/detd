@@ -4,10 +4,49 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
 //import
 
+h1
+{
+  font-family: 'Varela', sans-serif;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+
+}
+
+h1:hover
+{
+  letter-spacing: 1vh;
+}
+
 //Header
 .cat-menu {
   display: flex;
   flex-direction: column;
+}
+.links-menu {
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+.sub-menu{
+  z-index: 99999;
+  position: absolute;
+  list-style-type: none;
+  //margin-left: -40px;
+  display: none;
+  padding: 5px;
+  background-color: @grisfonce;
+}
+
+.menu-item-has-children:hover{
+  .sub-menu{
+    display: block;
+  }
+}
+.menu-item-has-childre::after{
+  content: '+';
 }
 //Header
 // Home
@@ -39,14 +78,14 @@ footer
 
   ul
   {
-    
+    display: flex;
+    min-width: 25vw;
+    justify-content: space-evenly;
   }
 
   li
   {
     list-style: none;
-    display: inline-flex;
-
   }
 
   a
