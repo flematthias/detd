@@ -92,10 +92,11 @@ flex-direction: row;
     border: 4px;
     background-color: white;
     -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-display: -ms-flexbox;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+    display: -ms-flexbox;
+
     img{
-        border-radius: 4px 4px 0 0;
+        border-radius: 4px;
     }
     h3{
         color: @grisfonce;
@@ -111,6 +112,15 @@ display: -ms-flexbox;
         color: @baselinecolor;
         text-decoration: none;
     }
+    span{
+        a{
+            color: @baselinecolor;
+        }
+        a:hover{
+            color: @presquenoir;
+            text-decoration: none;
+        } 
+    }
     div{
     display: flex;
     flex-direction: column;
@@ -120,7 +130,32 @@ display: -ms-flexbox;
 
 .my-masonry-image-list {
     .masonry-columns(3);
+
+    @media @laptop{
+        .masonry-columns(2);
+    }
+    @media @phone {
+        .masonry-columns(1);
+    }
   }
+
+  .navigation{
+      text-align: center;
+      a{
+          color: @presquenoir;
+        -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+        box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+      }
+      span{
+          color: white;
+          background-color: @presquenoir;
+          border-radius: 4px;
+      }
+      a, span{
+          padding:10px 18px;
+      }
+  }
+
 // Home
 //Footer
 footer
