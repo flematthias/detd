@@ -2,7 +2,7 @@
 <!-- Footer -->
 
 
-<footer id="footer">
+<footer>
 
 
     <div class="copyright">
