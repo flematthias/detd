@@ -9,11 +9,20 @@
 	</head>
 <body <?php body_class(); ?>>
 <header>
-    <nav id="menu" class="navbar navbar-expand-sm bg-light justify-content-center mb-1">
-        <?php wp_nav_menu( array(
-            'theme_location' => 'main',
-            'menu_class' => 'links-menu',
-            'container' =>false ) ); ?>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify-content-center w-100">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'main',
+                    'menu_class' => 'links-menu',
+                    'container' =>false ) ); ?>
+            </div>
+        </div>
+    </nav>
 
 </header>
 <div id="banner" class="mb-5">
