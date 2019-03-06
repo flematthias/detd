@@ -38,3 +38,27 @@ function detd_styles()
    }
 }
 add_action('wp_enqueue_scripts', 'detd_styles');
+
+function register_my_menus(){
+   register_nav_menus(
+     array(
+       'main'  => 'Main menu DetD',
+       'footer'  => 'Footer menu DetD'
+     ));
+  }
+  
+  add_action('init', 'register_my_menus');
+  
+  function bongo_wp_pagination() {
+    global $wp_query;
+    $big = 999999999;
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages
+    ));
+  }
+  add_action('init', 'bongo_wp_pagination');
+
+
