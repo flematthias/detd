@@ -25,10 +25,12 @@
   justify-content: space-between;
 }
 .sub-menu {
+  z-index: 99999;
   position: absolute;
   list-style-type: none;
-  margin-left: -40px;
   display: none;
+  padding: 5px;
+  background-color: #292e32;
 }
 .menu-item-has-children:hover .sub-menu {
   display: block;
