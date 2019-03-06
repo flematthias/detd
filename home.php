@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <?php
   $args = array(
-		'numberposts' => 4,
+		'numberposts' => 10,
 );
 
 global $post;
 
 $custom_posts = get_posts($args);?>
 
-<ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list">
+<ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list container">
 
 <?php
 foreach($custom_posts as $post) :setup_postdata($post);
