@@ -9,7 +9,7 @@
 	</head>
 <body <?php body_class(); ?>>
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,15 +23,15 @@
             </div>
         </div>
     </nav>
+    <div id="banner" class="mb-5">
+        <h1>D&D</h1>
+        <p>Design et Développement Web</p>
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-dribbble"></i>
+        <i class="fa fa-github-alt"></i>
+        <i class="fa fa-codepen"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
 
 </header>
-<div id="banner" class="mb-5">
-    <h1>D&D</h1>
-    <p>Design et Développement Web</p>
-    <i class="fa fa-facebook-square"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-dribbble"></i>
-    <i class="fa fa-github-alt"></i>
-    <i class="fa fa-codepen"></i>
-    <i class="fa fa-linkedin"></i>
-</div>
