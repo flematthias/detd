@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 #banner {
+  color: #8b8989;
   text-align: center;
   line-height: 1vh;
   width: 100vw;
@@ -23,6 +24,7 @@
 }
 #banner i:hover {
   color: black;
+  cursor: pointer;
 }
 .home {
   background-color: #f5f5f5;
@@ -35,15 +37,24 @@ a:hover {
   text-decoration: none;
   color: #b8b4b4;
 }
-.cat-menu {
-  display: flex;
-  flex-direction: column;
-}
 .links-menu {
-  width: 40%;
+  width: 30rem;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+}
+@media screen and (max-width: 48em) {
+  .links-menu {
+    flex-direction: column;
+  }
+}
+.navbar-brand {
+  display: none;
+}
+@media screen and (max-width: 48em) {
+  .navbar-brand {
+    display: block;
+  }
 }
 .sub-menu {
   z-index: 99999;
@@ -53,11 +64,22 @@ a:hover {
   padding: 10px;
   background-color: #292e32;
 }
+@media screen and (max-width: 48em) {
+  .sub-menu {
+    position: relative;
+    background-color: #f8f9fa;
+  }
+}
 .menu-item-has-children:hover .sub-menu {
   display: block;
 }
-.menu-item-has-childre::after {
+.menu-item-has-children::after {
   content: '+';
+}
+@media screen and (max-width: 48em) {
+  .menu-item-has-children::after {
+    content: none;
+  }
 }
 .classhome {
   border: 4px;
@@ -144,8 +166,12 @@ a:hover {
   padding: 10px 18px;
 }
 .single_article {
-  background-color: #8b8989;
-  margin: 2vh 1vw 2vh 1vw;
+  background-color: #f5f5f5;
+  padding: 2vh 1vw 2vh 1vw;
+}
+.single_article article {
+  background-color: white ;
+  border: solid 1px #292e32;
   border-radius: 4px;
   text-align: center;
 }

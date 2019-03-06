@@ -11,6 +11,7 @@
 
 #banner
 {
+  color: @bodycolor;
   text-align: center;
   line-height: 1vh;
   width: 100vw;
@@ -35,6 +36,7 @@ h1:hover
   i:hover
   {
     color: black;
+    cursor: pointer;
   }
 }
 
@@ -53,18 +55,22 @@ a:hover{
   text-decoration: none;
   color: @baselinecolor;
 }
-.cat-menu {
-  display: flex;
-  flex-direction: column;
-}
+
 .links-menu {
-  width: 40%;
+  width: 30rem;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
   @media @tablet {
+    flex-direction: column;
 }
 
+}
+.navbar-brand {
+  display: none;
+  @media @tablet{
+    display: block;
+  }
 }
 .sub-menu{
   z-index: 99999;
@@ -75,8 +81,10 @@ a:hover{
   padding: 10px;
   background-color: @grisfonce;
   @media @tablet {
-
+    position: relative;
+    background-color: #f8f9fa;
   }
+
 }
 
 .menu-item-has-children:hover{
@@ -84,8 +92,11 @@ a:hover{
     display: block;
   }
 }
-.menu-item-has-childre::after{
+.menu-item-has-children::after{
   content: '+';
+  @media @tablet{
+    content: none;
+  }
 }
 //Header
 // Home
@@ -173,10 +184,16 @@ justify-content: center;
 //Single
 .single_article
 {
-  background-color: @bodycolor ;
-  margin: 2vh 1vw 2vh 1vw;
-  border-radius: 4px;
-  text-align: center;
+background-color: @fondsite;
+  padding: 2vh 1vw 2vh 1vw;
+
+  article {
+    background-color: white ;
+    border: solid 1px @grisfonce;
+    border-radius: 4px;
+    text-align: center;
+  }
+
 
   header p
   {
