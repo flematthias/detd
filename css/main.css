@@ -71,7 +71,7 @@ a:hover {
 @media screen and (max-width: 48em) {
   .sub-menu {
     position: relative;
-    background-color: #f8f9fa;
+    background-color: #f5f5f5;
   }
 }
 .menu-item-has-children:hover .sub-menu {
