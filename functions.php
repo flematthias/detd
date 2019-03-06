@@ -25,12 +25,14 @@ function detd_styles()
         // REGISTER
        wp_register_script('MD', 'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js','' ,'' ,'', true);
        wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.min.js','' ,'' ,'', true);
+       wp_register_script('popper', get_template_directory_uri() . '/js/popper.min.js','' ,'' ,'', true);
        wp_register_script('main', get_template_directory_uri() . '/js/main.js','' ,'' ,'', true);
        wp_register_script('flexslider', get_template_directory_uri() . '/js/flexslider.js','' ,'' ,'', true);
 
         // ENQUEUE
        wp_enqueue_script('MD');
        wp_enqueue_script('jquery');
+       wp_enqueue_script('popper');
        wp_enqueue_script('main');
        wp_enqueue_script('flexslider');
        
