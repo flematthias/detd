@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
-h1 {
+#banner {
+  text-align: center;
+  line-height: 1vh;
+}
+#banner h1 {
   font-family: 'Varela', sans-serif;
   -webkit-transition: 1s;
   transition: 1s;
-  text-align: center;
 }
-h1:hover {
+#banner h1:hover {
   letter-spacing: 1vh;
+}
+#banner i:hover {
+  color: black;
 }
 .cat-menu {
   display: flex;

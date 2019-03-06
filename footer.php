@@ -3,7 +3,7 @@
 
 
 <footer>
-    <div>
+    <div id="banner">
         <h1>D&D</h1>
         <p>Design et Développement Web</p>
         <i class="fa fa-facebook-square"></i>
