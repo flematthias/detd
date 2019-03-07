@@ -476,3 +476,18 @@ footer li {
 footer a {
   color: #8a8a8a;
 }
+.errordiv p {
+  margin-right: 2vw;
+}
+.fof {
+  margin: 10px 0;
+}
+.fof canvas,
+.fof img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  z-index: 1;
+  background: #000;
+}
