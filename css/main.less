@@ -255,7 +255,7 @@ margin-top: 7px;
 {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   width: 15vw;
   padding: 2vh 1vw 2vh 1vw;
   background-color: @grisfonce;
@@ -266,8 +266,14 @@ margin-top: 7px;
   h2
   {
     text-transform: uppercase;
+    font-size: x-large;
   }
 
+  ul
+  {
+    padding: 0;
+  }
+  
   li
   {
     list-style: none;
@@ -278,6 +284,34 @@ margin-top: 7px;
       &:hover
       {
         color: @bodycolor;
+      }
+    }
+
+  }
+
+  #searchbar
+  {
+    margin-bottom: 2vh;
+    width: 100%;
+    position: relative;
+
+    input
+    {
+      width: 80%;
+      outline: none;
+    }
+
+    button
+    {
+      background-color: @bodycolor;
+      position: absolute;
+      border:2px solid @bodycolor;
+      cursor: pointer;
+
+
+      i
+      {
+        color: white;
       }
     }
 
