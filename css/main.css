@@ -265,6 +265,9 @@ a:hover {
   z-index: 999;
   margin-top: -2em;
 }
+.single_article .img-comments .number-comments {
+  padding-top: 10px;
+}
 .single_article article {
   background-color: white ;
   -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -327,6 +330,16 @@ a:hover {
 }
 .commentlist {
   text-align: left;
+  list-style: none;
+}
+.commentlist .comment-body::after {
+  content: "d";
+  font-size: 3px;
+  background-color: #f5f5f5;
+  padding-left: 100%;
+}
+.commentlist .children {
+  list-style: none;
 }
 .commentlist .reply {
   text-align: right;
@@ -341,6 +354,8 @@ a:hover {
   margin: 0.5em;
   height: 50px;
   width: 50px;
+  border: 3px solid #f5f5f5;
+  border-radius: 4px;
 }
 .commentlist .comment-meta {
   font-size: 12px;

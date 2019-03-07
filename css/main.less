@@ -316,6 +316,9 @@ margin-top: 7px;
     position: relative;
     z-index: 999;
     margin-top: -2em;
+    .number-comments{
+      padding-top: 10px;
+    }
   }
   article {
     background-color: white ;
@@ -409,6 +412,16 @@ margin-top: 7px;
 
 .commentlist {
 text-align: left;
+list-style: none;
+  .comment-body::after{
+  content: "d";
+  font-size: 3px;
+  background-color: @fondsite;
+ padding-left: 100%;
+  }
+  .children{
+    list-style: none;
+  }
   .reply{
     text-align: right;
    
@@ -423,6 +436,8 @@ text-align: left;
     margin: 0.5em;
     height: 50px;
     width: 50px;
+    border: 3px solid @fondsite;
+    border-radius: 4px;
   }
   .comment-meta{
     font-size: 12px;
