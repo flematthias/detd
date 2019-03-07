@@ -243,6 +243,16 @@ a:hover {
 #aside-widget-area li a:hover {
   color: #8b8989;
 }
+#aside-widget-area .tagcloud a {
+  color: white;
+  text-transform: capitalize;
+  background-color: #8b8989;
+  padding: 1vh;
+}
+#aside-widget-area .tagcloud a:hover {
+  color: #8b8989;
+  background-color: white;
+}
 .single_article {
   background-color: #f5f5f5;
   padding: 2vh 1vw 2vh 1vw;
