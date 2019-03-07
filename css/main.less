@@ -195,7 +195,7 @@ color: white;
 //Single
 .single_article
 {
-background-color: @fondsite;
+  background-color: @fondsite;
   padding: 2vh 1vw 2vh 1vw;
 
   .img-comments {
@@ -204,28 +204,49 @@ background-color: @fondsite;
     background-position: center;
     position: relative;
     z-index: 999;
-    margin-top: -3em;
+    margin-top: -2em;
   }
   article {
     background-color: white ;
-    border: solid 1px @grisfonce;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
     border-radius: 4px;
     text-align: center;
   }
 
-
-  header p
+  header
   {
-    text-align: center;
+   h2
+   {
+     color: @presquenoir;
+     text-transform: uppercase;
+
+     &:hover
+     {
+       color: @bodycolor;
+     }
+   }
+
+   p, a
+   {
+     text-align: center;
+     padding-top: 0;
+     padding-bottom: 0;
+     margin-bottom: 0;
+
+     &:hover
+     {
+       color: @presquenoir;
+     }
+   }
   }
 
   img
   {
-    padding: 2vh 2vw 2vh 2vw;
+    margin-top: 3vh;
     border-radius: 4px;
     width: 80%;
   }
-
 
   p
   {
@@ -233,6 +254,22 @@ background-color: @fondsite;
     text-align: justify;
   }
 
+  hr
+  {
+    width: 80%;
+    border-top: 5px solid @fondsite;
+  }
+
+  .comment-respond
+  {
+
+    h3{
+      text-align: left;
+      text-transform: uppercase;
+      color: @presquenoir;
+      padding: 2vh 10vw 2vh 10vw;
+    }
+  }
   .comment-form
   {
 
@@ -248,9 +285,61 @@ background-color: @fondsite;
       background-color: black;
       border: none;
       width: 15%;
+      margin-bottom: 5vh;
+    }
+
+    .comment-form-cookies-consent
+    {
+      display: none;
     }
   }
 }
+.prev_next_article
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+
+
+  a
+  {
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+    width: 12vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover
+    {
+      background-color: @presquenoir;
+      color: white;
+    }
+
+    &:first-child
+    {
+      &::before
+      {
+        content: " ←";
+      }
+    }
+
+    &:last-child
+    {
+      &::after
+      {
+        content: " →";
+      }
+    }
+
+  }
+
+}
+
 //Single
 
 //Footer
