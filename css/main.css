@@ -312,13 +312,13 @@ a:hover {
 .single_article header a:hover {
   color: #141414;
 }
-.single_article img {
+.single_article .imgsingle {
   margin-top: 3vh;
   border-radius: 4px;
   width: 80%;
 }
 .single_article p {
-  padding: 2vh 10vw 2vh 10vw;
+  padding: 2vh 0 2vh 0;
   text-align: justify;
 }
 .single_article hr {
@@ -346,6 +346,29 @@ a:hover {
 }
 .single_article .comment-form .comment-form-cookies-consent {
   display: none;
+}
+.commentlist {
+  text-align: left;
+}
+.commentlist .reply {
+  text-align: right;
+}
+.commentlist .reply a {
+  background-color: #141414;
+  color: white;
+  padding: 0.5em;
+}
+.commentlist img {
+  float: left;
+  margin: 0.5em;
+  height: 50px;
+  width: 50px;
+}
+.commentlist .comment-meta {
+  font-size: 12px;
+}
+.commentlist .comment-author {
+  color: #141414;
 }
 .prev_next_article {
   display: flex;

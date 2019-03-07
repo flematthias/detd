@@ -3,7 +3,9 @@
 
 <section class="single_article">
     <article id="<?php the_ID(); ?>">
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+    
+        <img class="imgsingle" src="<?php echo get_the_post_thumbnail_url(); ?>">
+    <div class="container">
         <div class="img-comments" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/images/comment.png');" >
             <p class="number-comments"><?php comments_number('0', '1', '%') ?></p></div>
         <div>
@@ -18,7 +20,11 @@
         </div>
 
     <hr>
-    <?php comments_template(); ?>
+    </div>
+
+    <div class="container">
+        <?php   comments_template(); ?>
+    </div>
     </article>
 
     <div class="prev_next_article">
