@@ -208,15 +208,15 @@ a:hover {
 .navigation span {
   padding: 10px 18px;
 }
-#archive_page .archive_page_content {
+.sidebar_page_content {
   display: flex;
   justify-content: center;
 }
-#archive_page .archive_page_content ul {
+.sidebar_page_content ul {
   margin-left: 0;
   margin-right: 0;
 }
-#archive_page .page-title {
+.page-title {
   color: #141414;
   text-transform: uppercase;
 }
