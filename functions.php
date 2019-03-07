@@ -76,3 +76,16 @@ function dd_scripts()
 
 add_action( 'wp_enqueue_scripts', 'dd_scripts' );
 
+function aside_widgets_init() {
+
+    register_sidebar( array(
+
+        'name' => 'Aside',
+        'id' => 'aside-widget-area',
+        'before_widget' => '<div class="nwa-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="nwa-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'aside_widgets_init' );
