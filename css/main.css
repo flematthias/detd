@@ -334,8 +334,10 @@ a:hover {
   color: #141414;
   padding: 2vh 10vw 2vh 10vw;
 }
-.single_article .comment-form textarea,
-.single_article .comment-form input {
+.single_article .comment-form p {
+  text-align: left;
+}
+.single_article .comment-form textarea {
   border: 5px solid #f5f5f5;
   width: 100%;
 }
@@ -343,12 +345,18 @@ a:hover {
   color: white;
   background-color: black;
   border: none;
-  width: 15%;
   margin-bottom: 5vh;
   padding: 0.5em;
+  cursor: pointer;
+}
+.single_article .comment-form .submit:hover {
+  background-color: #292e32;
 }
 .single_article .comment-form .comment-form-cookies-consent {
   display: none;
+}
+h3 {
+  text-align: left;
 }
 .commentlist {
   text-align: left;

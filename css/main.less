@@ -420,8 +420,12 @@ margin-top: 7px;
   }
   .comment-form
   {
+    p{
+      text-align: left;
 
-    textarea, input
+
+    }
+    textarea
     {
       border: 5px solid @fondsite;
       width: 100%;
@@ -432,9 +436,12 @@ margin-top: 7px;
       color: white;
       background-color: black;
       border: none;
-      width: 15%;
       margin-bottom: 5vh;
       padding: 0.5em;
+      cursor: pointer;
+      &:hover{
+        background-color: @grisfonce ;
+      }
     }
 
     .comment-form-cookies-consent
@@ -443,10 +450,13 @@ margin-top: 7px;
     }
   }
 }
-
+h3{
+  text-align: left;
+}
 .commentlist {
 text-align: left;
 list-style: none;
+
   .comment-body::after{
   content: "d";
   font-size: 3px;
