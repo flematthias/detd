@@ -11,11 +11,14 @@ get_header(); ?>
 
 <section class="single_article">
     <article class="pt-3">
-        <h2 class="contact"><?php the_title(); ?></h2>
-    <?php
-    the_content();
 
-    ?>
+        <div class="container">
+            <h2 class="contact"><?php the_title(); ?></h2>
+        <?php
+        the_content();
+    
+        ?>
+        </div>
     </article>
 </section>
 <?php get_footer(); ?>
