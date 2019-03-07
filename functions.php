@@ -38,7 +38,7 @@ function detd_styles()
        wp_enqueue_script('util');
        wp_enqueue_script('bootstrapjs');
        wp_enqueue_script('mainjs');
-       wp_enqueue_script('flexsliderjs');
+      //  wp_enqueue_script('flexsliderjs');
        
         
    }
