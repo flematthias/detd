@@ -11,15 +11,25 @@
 
 #banner
 {
-  color: @bodycolor;
+  color: @baselinecolor;
   text-align: center;
   line-height: 1vh;
   width: 100vw;
   background-color: white;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
   -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
   box-shadow:0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+
+  #icon_bar
+  {
+    word-spacing: 1vw;
+
+    i
+    {
+      font-size: x-large;
+    }
+  }
 
   h1
   {
@@ -27,6 +37,11 @@
     font-family: 'Varela', sans-serif;
     -webkit-transition: 1s;
     transition: 1s;
+
+    &:hover
+    {
+      cursor: pointer;
+    }
   }
 h1:hover
  {

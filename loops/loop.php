@@ -5,7 +5,7 @@
         <p class="number-comments"><?php comments_number('0', '1', '%') ?></p></div>
         <div class="mdc-image-list__supporting ">
           <h3 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <span class=""><?php the_time('j F Y '); ?></span>
+          <span class=""><a href="<?php the_permalink(); ?>"><?php the_time('j F Y '); ?></a></span>
           <span class=""><?php the_category(', '); ?></span>
         </div>
  

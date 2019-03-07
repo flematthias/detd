@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h2 class="page-title container" ><?php single_cat_title() ?></h2>
+<h2 class="page-title container mb-4" ><?php single_cat_title() ?></h2>
 
 <ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list container mb-5">
    <?php
