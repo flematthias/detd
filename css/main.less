@@ -54,8 +54,7 @@ body {
 //Header
 
 nav {
-  -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+  padding: 0!important;
 }
 a {
   color: @baselinecolor;
@@ -66,13 +65,22 @@ a:hover{
 }
 
 .links-menu {
+  margin: 0;
   min-width: 50%;
   display: flex;
+  margin-left: -40px;
   list-style-type: none;
   justify-content: space-between;
   @media @tablet {
     flex-direction: column;
 }
+  .menu-item {
+    padding: 10px;
+    &:hover {
+      background-color: white;
+      cursor: pointer;
+    }
+  }
 
 }
 .navbar-brand {
@@ -87,17 +95,29 @@ a:hover{
   list-style-type: none;
   display: none;
   padding: 10px;
+  margin-left: -10px;
   background-color: @grisfonce;
   @media @tablet {
     position: relative;
     background-color: @fondsite;
   }
-
 }
 
 .menu-item-has-children:hover{
+  &::after {
+    content: '-';
+  }
   .sub-menu{
+    margin-top: 10px;
+    padding: 0;
     display: block;
+    li {
+      margin: 0;
+      border-bottom: 0.1px solid @baselinecolor;
+    }
+    li:hover {
+      background-color: @grisfonce;
+    }
   }
 }
 .menu-item-has-children::after{
@@ -109,11 +129,13 @@ a:hover{
 //Header
 // Home
 .classhome {
-    border: 4px;
+  display: inline-block;
+    border-radius: 4px;
     background-color: white;
     -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
     display: -ms-flexbox;
+    padding: 2em;
 
     img{
         border-radius: 4px;
@@ -152,18 +174,18 @@ a:hover{
 
 .classhome .img-comments {
 background-repeat: no-repeat;
-background-size: contain;
+background-size: 38px;
 background-position: center;
 position: relative;
 z-index: 999;
-margin-top: -1.5em;
+margin-top: -1.3em;
 }
 
 .number-comments{
 display: flex;
 justify-content: center;
 color: white;
-
+margin-top: 7px;
 }
 
 
@@ -184,6 +206,11 @@ color: white;
           color: @presquenoir;
         -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
         box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+        &:hover{
+          color: white;
+          background-color: @presquenoir;
+          border-radius: 4px;
+        }
       }
       span{
           color: white;
@@ -196,6 +223,14 @@ color: white;
   }
 
 // Home
+
+//Archive
+.page-title{
+color:@presquenoir;
+text-transform: uppercase;
+
+}
+//Archive
 
 //Single
 .single_article
