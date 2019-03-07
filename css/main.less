@@ -62,7 +62,10 @@ body {
 
 
 //Header
+header {
+  overflow: hidden;
 
+}
 nav {
   padding: 0!important;
 }
@@ -93,10 +96,12 @@ a:hover{
   }
 
 }
+
 .navbar-brand {
   display: none;
   @media @tablet{
     display: block;
+    padding-left: 10px;
   }
 }
 .sub-menu{
@@ -104,37 +109,64 @@ a:hover{
   position: absolute;
   list-style-type: none;
   display: none;
-  padding: 10px;
+  padding: 0px;
+  margin-top: 10px;
   margin-left: -10px;
   background-color: @grisfonce;
   @media @tablet {
     position: relative;
     background-color: @fondsite;
   }
+  li {
+  margin: 0;
+  border-bottom: 0.1px solid @baselinecolor;
+}
+  li:hover {
+   background-color: @grisfonce;
+ }
 }
 .menu-item-has-children{
   i{
     font-size: 0.7em;
+    @media @tablet {
+      display: none;
+    }
   }
 }
 .menu-item-has-children:hover{
   i{
     font-size: 0.7em;
+    @media @tablet {
+      display: none;
+    }
   }
-   .sub-menu{
-    margin-top: 10px;
-    padding: 0;
-    li {
-      margin: 0;
-      border-bottom: 0.1px solid @baselinecolor;
-    }
-    li:hover {
-      background-color: @grisfonce;
-    }
+}
+li {
+  @media @tablet{
+    border-bottom: 0.1px solid @baselinecolor;
   }
 }
 
 //Header
+
+//Contact
+.contact{
+  text-transform: uppercase;
+}
+form {
+  p {
+    text-align: justify!important;
+  }
+  label,span,textarea {
+    width: 100%;
+  }
+input[type="submit"]{
+  background-color: black;
+  border: none;
+  color: white;
+}
+}
+//Contact
 // Home
 .classhome {
   display: inline-block;
