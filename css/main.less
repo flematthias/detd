@@ -262,10 +262,31 @@ margin-top: 7px;
   flex-direction: column;
   height: 40vh;
   width: 15vw;
+  padding: 2vh 1vw 2vh 1vw;
   background-color: @grisfonce;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+
+  h2
+  {
+    text-transform: uppercase;
+  }
+
+  li
+  {
+    list-style: none;
+    a
+    {
+      color: white;
+
+      &:hover
+      {
+        color: @bodycolor;
+      }
+    }
+
+  }
 }
 
 //Sidebar

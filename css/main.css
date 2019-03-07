@@ -225,10 +225,23 @@ a:hover {
   flex-direction: column;
   height: 40vh;
   width: 15vw;
+  padding: 2vh 1vw 2vh 1vw;
   background-color: #292e32;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+}
+#aside-widget-area h2 {
+  text-transform: uppercase;
+}
+#aside-widget-area li {
+  list-style: none;
+}
+#aside-widget-area li a {
+  color: white;
+}
+#aside-widget-area li a:hover {
+  color: #8b8989;
 }
 .single_article {
   background-color: #f5f5f5;
