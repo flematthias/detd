@@ -233,12 +233,42 @@ margin-top: 7px;
 // Home
 
 //Archive
-.page-title{
-color:@presquenoir;
-text-transform: uppercase;
+#archive_page
+{
+  .archive_page_content
+  {
+    display: flex;
+    justify-content: center;
 
+    ul
+    {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .page-title{
+    color:@presquenoir;
+    text-transform: uppercase;
+
+  }
 }
+
 //Archive
+
+//Sidebar
+#aside-widget-area
+{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 15vw;
+  background-color: @grisfonce;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+//Sidebar
 
 //Single
 .single_article
@@ -334,6 +364,7 @@ text-transform: uppercase;
       border: none;
       width: 15%;
       margin-bottom: 5vh;
+      padding: 0.5em;
     }
 
     .comment-form-cookies-consent
@@ -361,6 +392,7 @@ text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1em;
 
     &:hover
     {
@@ -389,6 +421,12 @@ text-transform: uppercase;
 }
 
 //Single
+
+//Page
+.single_article form p{
+  text-align: center;
+}
+//Page
 
 //Footer
 footer
@@ -420,3 +458,4 @@ footer
   }
 }
 //Footer
+
