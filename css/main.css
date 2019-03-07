@@ -280,6 +280,7 @@ a:hover {
   border: none;
   width: 15%;
   margin-bottom: 5vh;
+  padding: 0.5em;
 }
 .single_article .comment-form .comment-form-cookies-consent {
   display: none;
@@ -300,6 +301,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 .prev_next_article a:hover {
   background-color: #141414;
@@ -310,6 +312,9 @@ a:hover {
 }
 .prev_next_article a:last-child::after {
   content: " →";
+}
+.single_article form p {
+  text-align: center;
 }
 footer {
   background-color: #292e32;
