@@ -10,6 +10,6 @@ jQuery(function($) {
     $(".menu-item-has-children").mouseleave(function(){
         $(".fa-minus").remove();
         $(this).append( "<i class='fa fa-plus'></i>");
-        // $(".sub-menu").hide();
+        $(".sub-menu").hide();
     });
 });
