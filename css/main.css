@@ -42,11 +42,10 @@ a:hover {
 }
 .links-menu {
   margin: 0;
-  min-width: 50%;
   display: flex;
   margin-left: -40px;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width: 48em) {
   .links-menu {
@@ -83,13 +82,15 @@ a:hover {
     background-color: #f5f5f5;
   }
 }
-.menu-item-has-children:hover::after {
-  content: '-';
+.menu-item-has-children i {
+  font-size: 0.7em;
+}
+.menu-item-has-children:hover i {
+  font-size: 0.7em;
 }
 .menu-item-has-children:hover .sub-menu {
   margin-top: 10px;
   padding: 0;
-  display: block;
 }
 .menu-item-has-children:hover .sub-menu li {
   margin: 0;
@@ -97,14 +98,6 @@ a:hover {
 }
 .menu-item-has-children:hover .sub-menu li:hover {
   background-color: #292e32;
-}
-.menu-item-has-children::after {
-  content: '+';
-}
-@media screen and (max-width: 48em) {
-  .menu-item-has-children::after {
-    content: none;
-  }
 }
 .classhome {
   display: inline-block;
