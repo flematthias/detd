@@ -240,22 +240,22 @@ form input[type="submit"] {
 .navigation span {
   padding: 10px 18px;
 }
-#archive_page .archive_page_content {
+.sidebar_page_content {
   display: flex;
   justify-content: center;
 }
-#archive_page .archive_page_content ul {
+.sidebar_page_content ul {
   margin-left: 0;
   margin-right: 0;
 }
-#archive_page .page-title {
+.page-title {
   color: #141414;
   text-transform: uppercase;
 }
 #aside-widget-area {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   width: 15vw;
   padding: 2vh 1vw 2vh 1vw;
   background-color: #292e32;
@@ -265,6 +265,10 @@ form input[type="submit"] {
 }
 #aside-widget-area h2 {
   text-transform: uppercase;
+  font-size: x-large;
+}
+#aside-widget-area ul {
+  padding: 0;
 }
 #aside-widget-area li {
   list-style: none;
@@ -274,6 +278,34 @@ form input[type="submit"] {
 }
 #aside-widget-area li a:hover {
   color: #8b8989;
+}
+#aside-widget-area #searchbar {
+  margin-bottom: 2vh;
+  width: 100%;
+  position: relative;
+}
+#aside-widget-area #searchbar input {
+  width: 80%;
+  outline: none;
+}
+#aside-widget-area #searchbar button {
+  background-color: #8b8989;
+  position: absolute;
+  border: 2px solid #8b8989;
+  cursor: pointer;
+}
+#aside-widget-area #searchbar button i {
+  color: white;
+}
+#aside-widget-area .tagcloud a {
+  color: white;
+  text-transform: capitalize;
+  background-color: #8b8989;
+  padding: 1vh;
+}
+#aside-widget-area .tagcloud a:hover {
+  color: #8b8989;
+  background-color: white;
 }
 .single_article {
   background-color: #f5f5f5;
@@ -286,6 +318,9 @@ form input[type="submit"] {
   position: relative;
   z-index: 999;
   margin-top: -2em;
+}
+.single_article .img-comments .number-comments {
+  padding-top: 10px;
 }
 .single_article article {
   background-color: white ;
@@ -312,13 +347,13 @@ form input[type="submit"] {
 .single_article header a:hover {
   color: #141414;
 }
-.single_article img {
+.single_article .imgsingle {
   margin-top: 3vh;
   border-radius: 4px;
   width: 80%;
 }
 .single_article p {
-  padding: 2vh 10vw 2vh 10vw;
+  padding: 2vh 0 2vh 0;
   text-align: justify;
 }
 .single_article hr {
@@ -331,8 +366,10 @@ form input[type="submit"] {
   color: #141414;
   padding: 2vh 10vw 2vh 10vw;
 }
-.single_article .comment-form textarea,
-.single_article .comment-form input {
+.single_article .comment-form p {
+  text-align: left;
+}
+.single_article .comment-form textarea {
   border: 5px solid #f5f5f5;
   width: 100%;
 }
@@ -340,12 +377,53 @@ form input[type="submit"] {
   color: white;
   background-color: black;
   border: none;
-  width: 15%;
   margin-bottom: 5vh;
   padding: 0.5em;
+  cursor: pointer;
+}
+.single_article .comment-form .submit:hover {
+  background-color: #292e32;
 }
 .single_article .comment-form .comment-form-cookies-consent {
   display: none;
+}
+h3 {
+  text-align: left;
+}
+.commentlist {
+  text-align: left;
+  list-style: none;
+}
+.commentlist .comment-body::after {
+  content: "d";
+  font-size: 3px;
+  background-color: #f5f5f5;
+  padding-left: 100%;
+}
+.commentlist .children {
+  list-style: none;
+}
+.commentlist .reply {
+  text-align: right;
+}
+.commentlist .reply a {
+  background-color: #141414;
+  color: white;
+  padding: 0.5em;
+}
+.commentlist img {
+  float: left;
+  margin: 0.5em;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #f5f5f5;
+  border-radius: 4px;
+}
+.commentlist .comment-meta {
+  font-size: 12px;
+}
+.commentlist .comment-author {
+  color: #141414;
 }
 .prev_next_article {
   display: flex;

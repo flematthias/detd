@@ -264,35 +264,30 @@ margin-top: 7px;
 
 // Home
 
-//Archive
-#archive_page
-{
-  .archive_page_content
-  {
-    display: flex;
-    justify-content: center;
-
-    ul
-    {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  .page-title{
-    color:@presquenoir;
-    text-transform: uppercase;
-
-  }
-}
-
-//Archive
 
 //Sidebar
+.sidebar_page_content
+{
+  display: flex;
+  justify-content: center;
+
+  ul
+  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.page-title{
+  color:@presquenoir;
+  text-transform: uppercase;
+
+}
+
 #aside-widget-area
 {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   width: 15vw;
   padding: 2vh 1vw 2vh 1vw;
   background-color: @grisfonce;
@@ -303,8 +298,14 @@ margin-top: 7px;
   h2
   {
     text-transform: uppercase;
+    font-size: x-large;
   }
 
+  ul
+  {
+    padding: 0;
+  }
+  
   li
   {
     list-style: none;
@@ -318,6 +319,51 @@ margin-top: 7px;
       }
     }
 
+  }
+
+  #searchbar
+  {
+    margin-bottom: 2vh;
+    width: 100%;
+    position: relative;
+
+    input
+    {
+      width: 80%;
+      outline: none;
+    }
+
+    button
+    {
+      background-color: @bodycolor;
+      position: absolute;
+      border:2px solid @bodycolor;
+      cursor: pointer;
+
+
+      i
+      {
+        color: white;
+      }
+    }
+
+  }
+
+  .tagcloud
+  {
+    a
+    {
+      color: white;
+      text-transform: capitalize;
+      background-color: @bodycolor;
+      padding: 1vh;
+
+      &:hover
+      {
+        color: @bodycolor;
+        background-color: white;
+      }
+    }
   }
 }
 
@@ -336,6 +382,9 @@ margin-top: 7px;
     position: relative;
     z-index: 999;
     margin-top: -2em;
+    .number-comments{
+      padding-top: 10px;
+    }
   }
   article {
     background-color: white ;
@@ -372,7 +421,7 @@ margin-top: 7px;
    }
   }
 
-  img
+  .imgsingle
   {
     margin-top: 3vh;
     border-radius: 4px;
@@ -381,7 +430,7 @@ margin-top: 7px;
 
   p
   {
-    padding: 2vh 10vw 2vh 10vw;
+    padding: 2vh 0 2vh 0;
     text-align: justify;
   }
 
@@ -403,8 +452,12 @@ margin-top: 7px;
   }
   .comment-form
   {
+    p{
+      text-align: left;
 
-    textarea, input
+
+    }
+    textarea
     {
       border: 5px solid @fondsite;
       width: 100%;
@@ -415,9 +468,12 @@ margin-top: 7px;
       color: white;
       background-color: black;
       border: none;
-      width: 15%;
       margin-bottom: 5vh;
       padding: 0.5em;
+      cursor: pointer;
+      &:hover{
+        background-color: @grisfonce ;
+      }
     }
 
     .comment-form-cookies-consent
@@ -425,6 +481,47 @@ margin-top: 7px;
       display: none;
     }
   }
+}
+h3{
+  text-align: left;
+}
+.commentlist {
+text-align: left;
+list-style: none;
+
+  .comment-body::after{
+  content: "d";
+  font-size: 3px;
+  background-color: @fondsite;
+ padding-left: 100%;
+  }
+  .children{
+    list-style: none;
+  }
+  .reply{
+    text-align: right;
+   
+    a{
+      background-color: @presquenoir;
+      color: white;
+      padding: 0.5em;
+    }
+  }
+  img{
+    float: left;
+    margin: 0.5em;
+    height: 50px;
+    width: 50px;
+    border: 3px solid @fondsite;
+    border-radius: 4px;
+  }
+  .comment-meta{
+    font-size: 12px;
+  }
+  .comment-author{
+    color:@presquenoir;
+  }
+
 }
 .prev_next_article
 {
