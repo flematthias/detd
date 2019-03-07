@@ -368,7 +368,10 @@ form input[type="submit"] {
 .single_article .comment-form p {
   text-align: left;
 }
-.single_article .comment-form textarea {
+.single_article .comment-form textarea,
+.single_article .comment-form #url,
+.single_article .comment-form #email,
+.single_article .comment-form #author {
   border: 5px solid #f5f5f5;
   width: 100%;
 }
@@ -474,9 +477,6 @@ footer li {
 }
 footer a {
   color: #8a8a8a;
-}
-.errordiv p {
-  margin-right: 2vw;
 }
 .fof {
   margin: 10px 0;
